@@ -15,14 +15,11 @@ This project implements a reinforcement learning agent to solve the classic **Ca
 
 ## 🧱 Key Components
 
-| Function            | Purpose of function                                                     |
-|- - - - - - - - - - -|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|
-| `get_experiences()` | Samples a minibatch of training_data from the experience replay buffer  |
-| `play_move()`       | Chooses actions using an ε-greedy policy based on Q-values              |
-| `q_loss()`          | Returns the loss between Q-network and target_network predictions(MSE)  |
-| `update_networks()` | Periodically syncs weights from Q-network to the target network         |
-| `train()`           | Runs the main training loop across 2000 iterations/till avgscore>195    |
-
+- **get_experiences()**: Samples a minibatch of training_data from the experience replay buffer  
+- **play_move()**: Chooses actions using an ε-greedy policy based on Q-values  
+- **q_loss()**: Returns the loss between Q-network and target_network predictions (MSE)  
+- **update_networks()**: Periodically syncs weights from Q-network to the target network  
+- **train()**: Runs the main training loop across 2000 iterations/till avgscore > 195  
 ---
 
 ## 🚀 How It Works
